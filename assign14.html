@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assign 14</title>
+  </head>
+  <body>
+    <script>
+              "use strict";
+              // 1.
+              let employees = [
+                {
+                  id: 1,
+                  name: "Abhinav",
+                  department: "IT",
+                  Salary: 75000,
+                },
+                {
+                  id: 2,
+                  name: "Gaurav",
+                  department: "Sales",
+                  Salary: 52000,
+                },
+                {
+                  id: 3,
+                  name: "Raj",
+                  department: "IT",
+                  Salary: 64000,
+                },
+              ];
+               let it_emp = employees.filter((ele)=> ele.department === "IT" );
+               console.log('it dept.:',it_emp);
+
+               let sal_emp = employees.filter((ele)=> ele.Salary < 75000 );
+               console.log('salary < 65000:',sal_emp);
+
+               // 2.
+               let hospitals = [
+        {
+        id: 1,
+        name:"Hospital A",
+        location:"Delhi",
+        noOfBeds:450,
+        availability:"Yes"
+        },
+        {
+        id: 2,
+        name:"Hospital B",
+        location:"Pune",
+        noOfBeds:150,
+        availability:"No"
+        },
+        {
+        id: 3,
+        name:"Hospital C",
+        location:"Pune",
+        noOfBeds:350,
+        availability:"Yes"
+        }
+      ]
+
+      // a.
+      let beds = hospitals.filter((ele)=>ele.noOfBeds > 200)
+      console.log(' Number of Beds > 200:',beds)
+
+      // b.
+      let avail = hospitals.filter((ele)=>ele.availability === "Yes")
+      console.log(' Availability of Beds = Yes:',avail)
+
+       // c.
+       let loc_pune = hospitals.filter((ele)=>ele.location === "Pune")
+      console.log(' Location Pune:',loc_pune)
+    </script>
+  </body>
+</html>
